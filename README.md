@@ -1,8 +1,6 @@
 # Exploratory-Analysis-of-Top-countries-by-population-using-MYSQL
 
-This project explores top countries population data sourced from Kaggle using MySQL
-
-# Tittle: 
+# Tittle: Analysis of Top Countries Poplaton
 
 ![population](assets/images/shooting.png)
 
@@ -33,9 +31,7 @@ Ensure you have a SQL server environment set up (e.g., MySQL, PostgreSQL, SQL Se
 
 - create DATABASE:
  ```sql
-/*
 create DATABASE population;
-*/
 ```
 
 - Use DataBASE:
