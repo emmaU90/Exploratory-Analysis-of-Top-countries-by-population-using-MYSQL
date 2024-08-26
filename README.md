@@ -22,34 +22,21 @@ This project explores top countries population data sourced from Kaggle using My
 
 - What is the key main point?
 
-This analysis aims to explore recent US police killings, a hot topic that came into being, "Racism". This data has been gathered to take out some insights and analyze the story around racism in America.  The dataset contains basic data about people like their name, age, gender, and race. 
+This analysis aim to explores the top countries population data which was sourced from Kaggle using MySQL.
 
-Along with it, is the shooting/killing information, like the date of the event, where it happened? How they were shot? Did they attack? Were they holding weapons? Did they show any mental illness? Was the policeman wearing a camera? was the incident recorded? Did the suspect flee? Apart from that, a category column of which weapons were used by the suspect.
+Along with it, is the data information, like the  country name, pop[ulation, percentage of world population, net migration etc.
 
-- What is the ideal solution?
-
-To create a dashboard that provides insights into the analysis.
 
 # Stages
 
-- Download the .pbix file together with the dataset from this repository.
-- Open the file in Power BI Desktop.
-- (Optional) If using a different data source, connect your data to the existing model using Power Query Editor.
-- Explore the report pages to gain insights into police shootings.
-- 
-# Data cleaning
+Ensure you have a SQL server environment set up (e.g., MySQL, PostgreSQL, SQL Server).
 
-- What do we expect the clean data to look like?
-- What should it contain?
-- What limitations should we apply to it?
+- create DATABASE
+ 
+- Create a new table for the furniture store sales data:
 
-The aim is to refine our dataset to ensure it is structured and ready for analysis.
 
-The cleaned data should meet the following criteria and constraints:
 
-- Only relevant columns should be retained.
-- All data types should be appropriate for the contents of each column.
-- No column should contain null values, indicating complete data for all records.
 
 
 # Visualization
