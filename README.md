@@ -2,7 +2,7 @@
 
 # Tittle: Analysis of Top Countries Poplaton
 
-![population](assets/images/shooting.png)
+![population](assets/images/population.png)
 
 # Table of contents
 
