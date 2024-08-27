@@ -196,15 +196,15 @@ For this analysis, we’re going to focus on some of the questions below.
 -  countries where the median age is greater than 20 and the population density is more than 10 people per square kilometer?
 -  countries where either the median age is greater than 20 or the population density is more than 10 people per square kilometer?
 
-### 1. View the data
+### 1. The views of all the records and details of countries from the database?
 ```sql
 -- Querying the population table
 SELECT *
 FROM sales;
 ```
-![Visualization](assets/images/race.PNG)
+![Visualization](assets/images/view.PNG)
 
-### 2. Find the average, max and min of the price
+### 2. What is the total population of all the countries in the database?
 -- Selecting the average, maximum and minimum values from the table
 SELECT
 	AVG(price) AS avg_price,
