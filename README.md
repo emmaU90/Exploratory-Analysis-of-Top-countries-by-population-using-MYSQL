@@ -9,11 +9,8 @@
 - [Objective](#objective)
 - [Data source](#data-source)
 - [Stages](#stages)
-- [Data cleaning](#data-cleaning)
-- [Visualization](#visualization)
 - [Analysis](#analysis)
- - [Findings](#findings)
- - [Discovery](#discovery)
+- [Discovery](#discovery)
 - [Recommendations](#recommendations)
 - [Conclusion](#conclusion)
 
@@ -21,7 +18,7 @@
 
 - What is the key main point?
 
-This analysis aim to explores the top countries population data which was sourced from Kaggle using MySQL.
+This analysis aim to explores the top countries population data using MySQL.
 
 Along with it, is the data information, like the  country name, pop[ulation, percentage of world population, net migration etc.
 
@@ -180,20 +177,24 @@ INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,co
 INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/14/09 11:19','Chair',1200,'Visa','Jennifer','Jumeira','Dubayy','United Arab Emirates','1/14/09 10:44','1/14/09 21:26',25.2097222,55.2477778);
 INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/13/09 19:39','Chair',1200,'Visa','Jolene','Englewood','CO','United states','1/6/09 22:00','1/14/09 22:02',39.64778,-104.98722);
 ```
-  
-![Visualization](assets/images/Dashboard.PNG)
+
 
 # Analysis
 
 For this analysis, we’re going to focus on some of the questions below.
 
-- 
-2) Do we have almost equal number of female and male astronauts?
-3) What educational background does most astronaut have? What is the level of education of most astronaut?
-4) The top 5 Undergraduate Universities astronauts attended?
-5) The top Countries/States austronauts come from?
-6) What is the average number of space flight and space walk of astronauts?
-7) What is the average hours of space flight and space walk of astronau
+### Main Questions
+- The views of all the records and details of countries from the database?
+- What is the total population of all the countries in the database?
+- What is the average median age of the countries?
+- What is the average median age of countries where the median age is greater than 20?
+- country with the highest fertility rate?
+- country with the lowest fertility rate?
+
+### Alternative questions regarding the analysis
+-  names of countries with a total population greater than 1000?
+-  countries where the median age is greater than 20 and the population density is more than 10 people per square kilometer?
+-  countries where either the median age is greater than 20 or the population density is more than 10 people per square kilometer?
 
 ### 1. View the data
 ```sql
