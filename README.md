@@ -204,21 +204,15 @@ FROM sales;
 ```
 ![Visualization](assets/images/view.PNG)
 
-### 2. What is the total population of all the countries in the database?
--- Selecting the average, maximum and minimum values from the table
-SELECT
-	AVG(price) AS avg_price,
-    MAX(price) AS max_price,
-    MIN(price) AS min_price
-FROM
-	sales;
 
-/* 
-Averge price stands at 1740 USD
-Maximum price is 7500 USD
-Minimum price is 1200 USD
-*/
-![Visualization](assets/images/Trend.PNG)
+### 2. What is the total population of all the countries in the database?
+```sql
+-- total number of population
+
+SELECT SUM(population) FROM countries;
+````
+![Visualization](assets/images/Sum.PNG)
+
 
 ### 3. What is the correlation between gender and mental illness?
 ![Visualization](assets/images/Mental-illness.PNG)
