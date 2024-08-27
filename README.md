@@ -298,7 +298,7 @@ For this analysis, we’re going to focus on some of the questions below.
 ```sql
 -- Querying the population table
 SELECT *
-FROM sales;
+FROM countries;
 ```
 ![Visualization](assets/images/view.PNG)
 
