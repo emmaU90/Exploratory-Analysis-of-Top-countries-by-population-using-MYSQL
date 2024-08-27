@@ -215,31 +215,31 @@ SELECT SUM(population) FROM countries;
 
 
 ### 3. What is the average median age of the countries?
-![Visualization](assets/images/Mental-illness.PNG)
+![Visualization](assets/images/average.PNG)
 
 
 ### 4. What is the average median age of countries where the median age is greater than 20?
-![Visualization](assets/images/Recorded.PNG)
+![Visualization](assets/images/average20.PNG)
 
 
 ### 5. Country with the highest fertility rate?
-![Visualization](assets/images/5.PNG)
+![Visualization](assets/images/maximum.PNG)
 
 
 ### 6. Country with the lowest fertility rate?
-![Visualization](assets/images/5.PNG)
+![Visualization](assets/images/minimum.PNG)
 
 
 ### 7. Names of countries with a total population greater than 1000?
-![Visualization](assets/images/5.PNG)
+![Visualization](assets/images/name1000.PNG)
 
 
 ### 8. countries where the median age is greater than 20 and the population density is more than 10 people per square kilometer?
-![Visualization](assets/images/5.PNG)
+![Visualization](assets/images/countrymedium.PNG)
 
 
 ### 9. Countries where either the median age is greater than 20 or the population density is more than 10 people per square kilometer?
-![Visualization](assets/images/5.PNG)
+![Visualization](assets/images/countrieseither.PNG)
 
 
 
