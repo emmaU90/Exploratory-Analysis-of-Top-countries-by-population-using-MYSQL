@@ -247,14 +247,27 @@ SELECT MIN(fertility_rate) FROM countries;
 
 
 ### 7. Names of countries with a total population greater than 1000?
+```sql
+-- Filtering using Having logic based on chosen criteria
+SELECT SUM(population), name FROM countries GROUP BY name HAVING SUM(population) > 1000;
+```
 ![Visualization](assets/images/name1000.PNG)
 
 
 ### 8. countries where the median age is greater than 20 and the population density is more than 10 people per square kilometer?
+```sql
+-- Filtering using AND logic based on chosen criteria
+
+SELECT * FROM countries WHERE median_age > 20 AND density_per_sq_km > 10;
+```
 ![Visualization](assets/images/countrymedium.PNG)
 
 
 ### 9. Countries where either the median age is greater than 20 or the population density is more than 10 people per square kilometer?
+```sql
+-- Filtering using OR logic based on chosen criteria
+SELECT * FROM countries WHERE median_age > 20 OR density_per_sq_km > 10;
+```
 ![Visualization](assets/images/countrieseither.PNG)
 
 
