@@ -1,4 +1,4 @@
-# Exploratory-Analysis-of-Top-countries-by-population-using-MYSQL
+# Exploratory-Analysis-of-Top-countries-by-population-using-MySQL
 
 # Tittle: Analysis of Top Countries Poplaton
 
