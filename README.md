@@ -271,7 +271,6 @@ SELECT * FROM countries WHERE median_age > 20 OR density_per_sq_km > 10;
 ![Visualization](assets/images/countrieseither.PNG)
 
 
-
 # Discovery
 
 - What did we learn?
@@ -289,7 +288,6 @@ Based on the SQL queries here is what we discovered:
 5. We found countries where the median age is greater than 20 and the population density exceeds 10 people per square kilometer.
 
 
-
 # Recommendations
 
 - What do you recommend based on the insights gathered?
@@ -298,7 +296,7 @@ Based on the insights gathered from the SQL queries, here are some recommendatio
 
 1. Countries with very high populations, especially those exceeding 1 billion, should focus on sustainable population management strategies. This could involve enhancing healthcare services, improving family planning programs, and ensuring that infrastructure and resources can accommodate the population growth.
 
-2. For countries with extremely high fertility rates (e.g., 6.7 children per woman), it might be necessary to implement educational programs and family planning initiatives to reduce fertility rates in a way that balances population growth and economic development. Conversely, countries with very low fertility rates (e.g., 1.1 children per woman) should explore incentives for families to have more children, such as providing financial benefits, parental leave, and childcare support.
+2. For countries with extremely high fertility rates ( for example 6.7 children per woman), it might be necessary to implement educational programs and family planning initiatives to reduce fertility rates in a way that balances population growth and economic development. Conversely, countries with very low fertility rates (for example 1.1 children per woman) should explore incentives for families to have more children, such as providing financial benefits, parental leave, and childcare support.
 
 3. For countries with a median age below the global average, there is an opportunity to invest in education, vocational training, and employment opportunities to capitalize on the youthful population. These countries should also focus on policies that keep young people engaged in productive activities to drive economic growth.
 
@@ -307,4 +305,4 @@ Based on the insights gathered from the SQL queries, here are some recommendatio
 
 # Conclusion
 
-Base on the findings and analysis of the US police killings dataset, we can conclude that the project reveals several key insights regarding the distribution of incidents by race, trends over time, and the correlation between gender, mental illness, and recorded incidents which showcases the effectiveness of exploratory data analysis in providing useful insights in the dataset.
+Base on the findings and analysis of the top countries by population dataset, we can conclude that the insights gathered from the SQL queries provide a clear understanding of the demographic trends and population characteristics of different countries. By analyzing each key factors such as total population, median age, fertility rates, and population density, we have identified both challenges and opportunities that can significantly impact the economic landscape of these countries.
