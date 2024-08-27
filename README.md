@@ -188,13 +188,13 @@ For this analysis, we’re going to focus on some of the questions below.
 - What is the total population of all the countries in the database?
 - What is the average median age of the countries?
 - What is the average median age of countries where the median age is greater than 20?
-- country with the highest fertility rate?
-- country with the lowest fertility rate?
+- Country with the highest fertility rate?
+- Country with the lowest fertility rate?
 
 ### Alternative questions regarding the analysis
--  names of countries with a total population greater than 1000?
--  countries where the median age is greater than 20 and the population density is more than 10 people per square kilometer?
--  countries where either the median age is greater than 20 or the population density is more than 10 people per square kilometer?
+-  Names of countries with a total population greater than 1000?
+-  Countries where the median age is greater than 20 and the population density is more than 10 people per square kilometer?
+-  Countries where either the median age is greater than 20 or the population density is more than 10 people per square kilometer?
 
 ### 1. The views of all the records and details of countries from the database?
 ```sql
@@ -214,14 +214,33 @@ SELECT SUM(population) FROM countries;
 ![Visualization](assets/images/Sum.PNG)
 
 
-### 3. What is the correlation between gender and mental illness?
+### 3. What is the average median age of the countries?
 ![Visualization](assets/images/Mental-illness.PNG)
 
-### 4. Is there a correlation between recorded incidents and the number of those who flee under the incidents?
+
+### 4. What is the average median age of countries where the median age is greater than 20?
 ![Visualization](assets/images/Recorded.PNG)
 
-### 5. What method of killing was used more during the incident?
+
+### 5. Country with the highest fertility rate?
 ![Visualization](assets/images/5.PNG)
+
+
+### 6. Country with the lowest fertility rate?
+![Visualization](assets/images/5.PNG)
+
+
+### 7. Names of countries with a total population greater than 1000?
+![Visualization](assets/images/5.PNG)
+
+
+### 8. countries where the median age is greater than 20 and the population density is more than 10 people per square kilometer?
+![Visualization](assets/images/5.PNG)
+
+
+### 9. Countries where either the median age is greater than 20 or the population density is more than 10 people per square kilometer?
+![Visualization](assets/images/5.PNG)
+
 
 
 # Discovery
