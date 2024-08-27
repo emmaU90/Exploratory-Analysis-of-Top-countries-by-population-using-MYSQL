@@ -188,8 +188,8 @@ For this analysis, we’re going to focus on some of the questions below.
 - What is the total population of all the countries in the database?
 - What is the average median age of the countries?
 - What is the average median age of countries where the median age is greater than 20?
-- Country with the highest fertility rate?
-- Country with the lowest fertility rate?
+- Find the highest fertility rate?
+- Find the lowest fertility rate?
 
 ### Alternative questions regarding the analysis
 -  Names of countries with a total population greater than 1000?
@@ -215,18 +215,34 @@ SELECT SUM(population) FROM countries;
 
 
 ### 3. What is the average median age of the countries?
+```sql
+-- find the mean median age
+SELECT AVG(median_age) FROM countries;
+```
 ![Visualization](assets/images/average.PNG)
 
 
 ### 4. What is the average median age of countries where the median age is greater than 20?
+```sql
+-- Categorize median_age using case statement
+SELECT AVG(median_age) FROM countries WHERE median_age > 20;
+```
 ![Visualization](assets/images/average20.PNG)
 
 
-### 5. Country with the highest fertility rate?
+### 5. Find the highest fertility rate?
+```sql
+-- Find the maximum value of fertllity rate
+SELECT MAX(fertility_rate) FROM countries;
+```
 ![Visualization](assets/images/maximum.PNG)
 
 
-### 6. Country with the lowest fertility rate?
+### 6. Find the lowest fertility rate?
+```sql
+-- Find the minimum value of frtility rate
+SELECT MIN(fertility_rate) FROM countries;
+```
 ![Visualization](assets/images/minimum.PNG)
 
 
