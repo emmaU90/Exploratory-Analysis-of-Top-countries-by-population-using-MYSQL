@@ -7,6 +7,7 @@
 # Table of contents
 
 - [Objective](#objective)
+- [Data source](#data-source)
 - [Stages](#stages)
 - [Data cleaning](#data-cleaning)
 - [Visualization](#visualization)
@@ -24,6 +25,24 @@ This analysis aim to explores the top countries population data which was source
 
 Along with it, is the data information, like the  country name, pop[ulation, percentage of world population, net migration etc.
 
+
+# Data source
+
+- What data is needed to achieve this objective?
+
+We need data on the top countries by population
+
+- Where is the data coming from?
+
+The data is sourced from Worldometer
+```sql
+/*
+ Countries and dependent territories, 2020
+ Data adapted from
+ http://www.worldometers.info/world-population/population-by-country/
+ Does not include rows which had "N.A." values, so some territories are missing.
+ */
+```
 
 # Stages
 
@@ -161,35 +180,43 @@ INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,co
 INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/14/09 11:19','Chair',1200,'Visa','Jennifer','Jumeira','Dubayy','United Arab Emirates','1/14/09 10:44','1/14/09 21:26',25.2097222,55.2477778);
 INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/13/09 19:39','Chair',1200,'Visa','Jolene','Englewood','CO','United states','1/6/09 22:00','1/14/09 22:02',39.64778,-104.98722);
 ```
-
-
-
-# Visualization
-
-## Results
-- What does the dashboard look like?
   
 ![Visualization](assets/images/Dashboard.PNG)
 
 # Analysis
 
-## Findings
-- What did we find?
-For this analysis, we’re going to focus on the questions below to get the information we need for the analysis.
+For this analysis, we’re going to focus on some of the questions below.
 
-Here are the key questions we need to answer:
+- 
+2) Do we have almost equal number of female and male astronauts?
+3) What educational background does most astronaut have? What is the level of education of most astronaut?
+4) The top 5 Undergraduate Universities astronauts attended?
+5) The top Countries/States austronauts come from?
+6) What is the average number of space flight and space walk of astronauts?
+7) What is the average hours of space flight and space walk of astronau
 
-- What is the distribution of incidents by race?
-- What are the trends or patterns of shooting over a period of years?
-- What is the correlation between gender and mental illness?
-- Is there a correlation between recorded incidents and the number of those who flee under the incidents?
-- What method of killing was used more during the incident?
-
-
-### 1. What is the distribution of incidents by race?
+### 1. View the data
+```sql
+-- Querying the population table
+SELECT *
+FROM sales;
+```
 ![Visualization](assets/images/race.PNG)
 
-### 2. What are the trends or patterns of shooting over a period of years?
+### 2. Find the average, max and min of the price
+-- Selecting the average, maximum and minimum values from the table
+SELECT
+	AVG(price) AS avg_price,
+    MAX(price) AS max_price,
+    MIN(price) AS min_price
+FROM
+	sales;
+
+/* 
+Averge price stands at 1740 USD
+Maximum price is 7500 USD
+Minimum price is 1200 USD
+*/
 ![Visualization](assets/images/Trend.PNG)
 
 ### 3. What is the correlation between gender and mental illness?
@@ -218,17 +245,6 @@ We discovered that
 
 5. With regard to the method of killing, we can conclude that shooting was used more in the incident with a percentage of 95.71, compared to shooting and tasering, which was 4.29%.
 
-# Possible Correlation
-
-1. Distribution by Race: The data indicates that the white race has the highest number of incidents, followed by Black and Hispanic individuals. This distribution raises important questions about the underlying factors contributing to these disparities, such as socioeconomic conditions, systemic racism, or law enforcement practices.
-
-2. Trends Over Time: The significant spike in incidents in 2015 followed by a decline in 2020 suggests possible shifts in law enforcement policies, public awareness, or reporting practices. The year 2020, in particular, was marked by social unrest and movements like Black Lives Matter, which may have influenced these trends.
-
-3. Gender and Mental Illness Correlation: The data shows that a higher percentage of males were involved in incidents regardless of mental illness status. This suggests that males are disproportionately represented in these incidents, possibly due to societal roles, behaviors, or law enforcement biases.
-
-4. Recorded Incidents and Fleeing Suspects: The analysis indicates that suspects were more likely to flee when the body camera was off, suggesting potential trust issues between the public and law enforcement. The presence of body cameras may act as a deterrent to fleeing, reflecting concerns about accountability and transparency.
-
-5. Method of Killing: The overwhelming use of shooting as the method of killing raises concerns about the proportionality and necessity of force used in these incidents. The limited use of tasering suggests a preference for lethal force in many situations.
 
 
 # Recommendations
