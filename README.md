@@ -20,7 +20,7 @@
 
 This analysis aim to explores the top countries population data using MySQL.
 
-Along with it, is the data information, like the  country name, pop[ulation, percentage of world population, net migration etc.
+Along with it, is the data information, like the  country name, population, percentage of world population, net migration etc.
 
 
 # Data source
