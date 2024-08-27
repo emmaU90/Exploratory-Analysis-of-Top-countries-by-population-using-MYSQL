@@ -276,32 +276,34 @@ SELECT * FROM countries WHERE median_age > 20 OR density_per_sq_km > 10;
 
 - What did we learn?
 
-We discovered that
+Based on the SQL queries here is what we discovered:
 
-1. With the distribution of incidents by race, it was found that the race with the highest distribution of incidents was the white race with a manner of death (shooting or tasered) of about 2476, followed by Black, Hispanic, Asian, Native, and Others with the lowest incidents of about 48.
+1. We retrieved all the records from the countries table, giving us a complete dataset that includes details like population, median age, fertility rate, population density, etc. for each country.
   
-2. Upon analyzing the dataset, the trends or patterns of shooting over a period of years, indicated a highest spike in the year 2015 as more incidents were recorded in that year with a count of 965, and the lowest year was 2020 with a count of 374.
+2. Upon analyzing the dataset, we learned that the total population of all the countries combined is 7,793,665,458 billion.
    
-3. According to the findings, the relationship between gender and mental illness indicates that when mental illness was false, males had a percentage of about 95.79 compared to females, who had a percentage of about 4.0, and when mental illness was true, males still had the highest number with 93.74% compared to females with 6.26%. In summary, we can conclude that, with regard to the incident, there were more males than females.
+3. According to the findings, the average median age across all countries is 31 years while the average median age of countries with a median age greater than 20 is 34 years. (calculated into one decimal place)
    
-4. The pie chart in the power BI report shows the relationship between the body camera and the count of flee individuals. There is a noticeable fact that the count of flee was high, with a percentage of 88.19 when the body camera was false and 11.81% when the body camera was true. In summary, we can conclude that more individuals fled when the body camera was off compared to the individuals who fled when the body camera was on. This can indicate trust issues on the side of the policy.
-
-5. With regard to the method of killing, we can conclude that shooting was used more in the incident with a percentage of 95.71, compared to shooting and tasering, which was 4.29%.
+4. We also discovered that the country with the highest fertility rate has a rate of 7 while the country with the lowest fertility rate has a rate of 1.1 children per woman.
+   
+5. We found countries where the median age is greater than 20 and the population density exceeds 10 people per square kilometer.
 
 
 
 # Recommendations
+
 - What do you recommend based on the insights gathered?
 
-1. Policy Reform: Given the racial disparities in the distribution of incidents, there should be a focused review of law enforcement practices to identify and address potential biases. This could involve revising use-of-force policies, increasing cultural competency training, and ensuring more equitable policing.
+Based on the insights gathered from the SQL queries, here are some recommendations:
 
-2. Mental Health Support: The data highlights the need for better mental health support and crisis intervention training for law enforcement officers. Since mental illness is a factor in many incidents, integrating mental health professionals into policing could help de-escalate situations and reduce the use of lethal force.
+1. Countries with very high populations, especially those exceeding 1 billion, should focus on sustainable population management strategies. This could involve enhancing healthcare services, improving family planning programs, and ensuring that infrastructure and resources can accommodate the population growth.
 
-3. Body Camera Utilization: The correlation between fleeing suspects and the absence of body cameras underscores the importance of widespread body camera usage. Ensuring that all officers wear and activate body cameras during interactions with the public could enhance accountability and build trust within communities.
+2. For countries with extremely high fertility rates (e.g., 6.7 children per woman), it might be necessary to implement educational programs and family planning initiatives to reduce fertility rates in a way that balances population growth and economic development. Conversely, countries with very low fertility rates (e.g., 1.1 children per woman) should explore incentives for families to have more children, such as providing financial benefits, parental leave, and childcare support.
 
-4. Non-Lethal Force Emphasis: The high percentage of shootings suggests that law enforcement should prioritize non-lethal methods, such as tasers or other less-lethal tools, especially in situations where the threat level does not warrant lethal force. Training programs should emphasize de-escalation techniques and alternatives to shooting.
+3. For countries with a median age below the global average, there is an opportunity to invest in education, vocational training, and employment opportunities to capitalize on the youthful population. These countries should also focus on policies that keep young people engaged in productive activities to drive economic growth.
 
-5. Community Engagement: To address the underlying issues contributing to these incidents, law enforcement agencies should engage with communities, particularly those most affected, to build trust, improve relationships, and work collaboratively to create safer environments.
+4. Countries identified with population sizes and growth trends that are below 1000 should focus on strategies to boost population growth sustainably. This might include immigration policies to attract talent and population growth strategies through economic development and improving living conditions.
+
 
 # Conclusion
 
