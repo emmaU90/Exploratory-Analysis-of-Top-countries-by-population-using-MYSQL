@@ -1,6 +1,6 @@
-# Exploratory-Analysis-of-Top-countries-by-population-using-MySQL
+# Exploratory-Analysis-of-Top-Countries-by-Population-using-MySQL
 
-# Tittle: Analysis of Top Countries Poplaton
+# Tittle: Analysis of Top Countries Populaton
 
 ![population](assets/images/population.png)
 
